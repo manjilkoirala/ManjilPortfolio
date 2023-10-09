@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
 
 .container{
     padding: 10px 10%;
+    
 }
 
 nav{
@@ -154,4 +156,52 @@ width: 50%;
 
 .tab-contents.active-tab{
     display: block;
+}
+
+
+/* ---------------Services------------ */
+#services{
+    background-color: #17171a;
+    padding: 30px 0;
+
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:  0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px ;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
 }
