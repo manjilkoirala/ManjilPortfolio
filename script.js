@@ -11,3 +11,14 @@ for(let tabcontent of tabcontents){
 event.currentTarget.classList.add("active-link")
 document.getElementById(tabname).classList.add("active-tab")
 }
+
+// -----------------Menu------------------
+var sidemenu= document.getElementById("sideMenu")
+
+const openMenu=()=>{
+    sidemenu.style.right="0"
+}
+
+const closeMenu=()=>{
+    sidemenu.style.right="-200px"
+}

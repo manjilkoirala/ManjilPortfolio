@@ -14,13 +14,16 @@
         <div class="container">
             <nav>
                 <img class="logo" src="images/logo.png" alt="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                
             </nav>
             <div class="headerText">
                 <p>Frontend Developer</p>
@@ -136,6 +139,38 @@
                 </div>
             </div>
             <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> manjilkoirala7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9816317765</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/manjil.koirala.98"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/techlearnhere/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/manjil-koirala/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/manjilkoirala"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Manjil. Enjoy Coding ✌️</p>
         </div>
     </div>
 
